@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    
+    <title>Admin Profile</title>
+</head>
+<body class="bg-purple-100">
+    <header>
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full">
+            <!-- navigation bar, add logout button -->
+             <nav>
+                <div class="flex justify-start ml-4 mt-4">
+                <button class="text-white font-semibold bg-purple-800 px-10 py-1 rounded-md hover:bg-purple-600 transition 
+                hover:ease-out duration-700">
+                Log out
+              </button> </div>
+             </nav></div>
+    </header>
+    <div class="bg-white">
+        <div class="flex justify-center p-6 border-b-4">
+          <div class="w-2/3">
+            <h1 class="text-center text-purple-600 font-bold font-serif text-4xl">
+                Welcome
+            </h1>
+            <h2 class="text-center text-purple-900 font-semibold font-serif">
+              name of Admin
+        <!--connect it to database to show the admin name-->
+            </h2>
+            <p class="text-center text-gray-500 font-semibold font-serif tracking-wide leading-7 mt-2">
+              You have full authority 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!----container-->
+      <!----add this two line because the grid divided into 3 section and can be expanded to more than 3-->
+      <div class="px-10 mt-3">
+        <div class="flex flex-wrap">
+
+          <!-- box1 -->
+        <div class="container w-full sm:w-1/2 lg:w-1/2 pl-8">
+        <div class="w-4/3 p-3 ml-10 mr-10 bg-white rounded-md border-t-4 hover:shadow duration-700">
+          <h1 class="text-center text-lg font-semibold font-serif text-purple-900">
+            User Profile Informations
+          </h1>
+          <div class="ml-4 mt-4">
+                 <!--connect it to database to ONLY show/appear the user information-->
+          </div>
+        </div>
+        </div>
+
+        
+        <!-- box2 -->
+        <div class="container w-full sm:w-1/2 lg:w-1/2 pl-8">
+        <div class="w-4/3 bg-white p-3 ml-10 mr-10 rounded-md border-t-4 hover:shadow duration-700">
+          <h1 class="text-center text-lg font-semibold font-serif text-purple-900">
+            Announcement
+          </h1>
+          <div class="ml-4 mt-4">
+              <p class="text-purple-600 font-semibold font-serif">
+                Cyber Security Awareness (IT Department)
+              </p>
+              <p class="text-gray-700 text-sm font-semibold">
+                DON'T respond to any wired links, email or messages. 
+                That can harm your device, most attacks start with action by user.
+              </p>
+              <br>
+              <p class="text-purple-600 font-semibold font-serif">
+                Happy New year 2021</p>
+              <p class="text-gray-700 text-sm font-semibold">
+                Have a great vacation and holiday
+              </p>
+          </div>
+        </div>
+      </div>
+      
+            <!-- box3 -->
+            <div class="container w-full sm:w-1/2 lg:w-1/2 pl-8">
+              <div class="w-4/3 bg-white p-3 ml-10 mr-10 rounded-md border-t-4 hover:shadow duration-700">
+              <h1 class="text-center text-lg font-semibold font-serif text-purple-900">
+                Editing
+              </h1>
+              <div class="ml-4 mt-4">
+                
+              </div>
+            </div>
+            </div>
+</div>
+</body>
+</html>

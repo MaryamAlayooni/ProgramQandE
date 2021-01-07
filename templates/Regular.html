@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>User Profile</title>
+</head>
+<body class="bg-purple-100">
+    <header>
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full">
+            <!-- navigation bar, add logout button -->
+             <nav>
+                <div class="flex justify-start ml-4 mt-4">
+                <button class="text-white font-semibold bg-purple-800 px-10 py-1 rounded-md hover:bg-purple-600 transition 
+                hover:ease-out duration-700">
+                Log out
+              </button> </div>
+             </nav></div>
+    </header>
+    <div class="bg-white">
+        <div class="flex justify-center p-6 border-b-4">
+          <div class="w-2/3">
+            <h1 class="text-center text-purple-600 font-bold font-serif text-4xl">
+                Welcome
+            </h1>
+            <h2 class="text-center text-purple-900 font-semibold font-serif">
+              name of user
+              {{ user_name }}
+              <!--connect it to database to show user name -->
+            </h2>
+            <p class="text-center text-gray-500 font-semibold font-serif tracking-wide leading-7 mt-2">
+              Here you can see your profile information and Announcement
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!----container-->
+      <!----easy peasy no need to grid, becase it's only two section-->
+
+
+      <div class="w-full flex justify-center mt-5">
+          <!-- box1 -->
+        <div class="w-1/2 bg-white p-3 rounded-md ml-10 mr-10 border-t-4 hover:shadow duration-700">
+          <h1 class="text-center text-lg font-semibold font-serif text-purple-900">
+            User Profile Informations
+          </h1>
+          <div class="ml-4 mt-4">
+        <!--connect it to database to ONLY show/appear the user information-->
+          </div>
+        </div>
+
+        <!-- box2 -->
+        <div class="w-1/2 bg-white p-3 mr-10 rounded-md border-t-4 hover:shadow duration-700">
+          <h1 class="text-center text-lg font-semibold font-serif text-purple-900">
+            Announcement
+          </h1>
+          <div class="ml-4 mt-4">
+              <lu class="text-purple-600 font-semibold font-serif">
+                Cyber Security Awareness (IT Department)
+              </lu>
+              <br>
+              <span class="text-gray-700 text-sm font-semibold">
+                DON'T respond to any wired links, email or messages. 
+                That can harm your device, most attacks start with action by user.
+              </span>
+              <br>
+              <lu class="text-purple-600 font-semibold font-serif">Happy New year 2021</lu>
+              <br>
+              <span class="text-gray-700 text-sm font-semibold">
+                Have a great vacation and holiday
+              </span>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
